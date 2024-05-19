@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+.validator-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.validator-container h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.input-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #333;
+}
+
+/* Buttons */
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#check-btn {
+  background-color: #5dd39e;
+  color: #fff;
+}
+
+#check-btn:hover {
+  background-color: #45a77d;
+}
+
+.secondary {
+  background-color: #f76c6c;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #d45757;
+}
+
+/* Results */
+.results {
+  margin-top: 20px;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  min-height: 40px;
+}
+
+.results.valid {
+  background-color: rgba(93, 211, 158, 0.2);
+  color: #a4f7d4;
+}
+
+.results.invalid {
+  background-color: rgba(247, 108, 108, 0.2);
+  color: #ffbaba;
+}
